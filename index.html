@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #tunnel {
+        display: flex;
+        padding: 0px;
+      }
+      #tunnel-midle > img,
+      #tunnel-open > img,
+      #tunnel-start > img {
+        height: 150px;
+      }
+      #tunnel-midle {
+        z-index: 2;
+      }
+      marquee {
+        position: absolute;
+        top: 80px;
+      }
+      marquee > div {
+        height: 60px;
+        width: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tunnel">
+      <div id="tunnel-open"><img src="open.jpg" alt="" /></div>
+      <div id="tunnel-midle"><img src="middle.jpg" alt="" /></div>
+      <div id="tunnel-start"><img src="start.jpg" alt="" /></div>
+    </div>
+    <marquee><div></div></marquee>
+  </body>
+</html>
